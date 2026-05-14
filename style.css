@@ -111,3 +111,18 @@ body {
     color: #8eaca8; /* Matches your header color */
 }
 
+/* Make the tutorial card expand across 2 grid columns on desktop */
+@media (min-width: 768px) {
+    .project-grid .video-card-wide {
+        grid-column: span 2;
+    }
+}
+
+/* Give the video player maximum space inside the expanded card */
+.video-card-wide video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 16px;
+    display: block;
+}
